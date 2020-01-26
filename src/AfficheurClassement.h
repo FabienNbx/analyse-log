@@ -20,6 +20,7 @@ e-mail               : charles.javerliat@insa-lyon.fr et fabien.narboux@insa-lyo
 //------------------------------------------------------------------------
 // Rôle de la classe <AfficheurClassement>
 //
+// La classe AfficheurClassement permet d'afficher le classement des n urls les plus visitées
 //
 //------------------------------------------------------------------------
 
@@ -32,6 +33,10 @@ public:
   //----------------------------------------------------- Méthodes publiques
 
   static void afficherClassement(std::vector<CompteurAccesURLAbsolu*> & l, const unsigned int n = 10, std::ostream & os = std::cout);
+  // Mode d'emploi : méthode statique, peut être appelée sans instanciation
+  //
+  // Contrat :
+  // - Affiche sur os les n urls les plus visitées
 
 };
 

@@ -29,8 +29,6 @@ void CompteurAccesURLAbsolu::incrementer()
 
 
 std::ostream & operator<<(std::ostream & os, const CompteurAccesURLAbsolu & c )
-// Algorithme :
-//
 {
   os << c.url << " (" << c.nbAcces << " hits)";
   return os;
@@ -49,13 +47,12 @@ bool CompteurAccesURLAbsolu::comparer(const CompteurAccesURLAbsolu* c1, const Co
     //Tri par nombre d'accès décroissant
     return c1->nbAcces > c2->nbAcces;
   }
-}
+} //----- Fin de operator comparer
 
 //-------------------------------------------- Constructeurs - destructeur
 
-CompteurAccesURLAbsolu::CompteurAccesURLAbsolu (const std::string & URL) : url(URL), nbAcces(0)
-// Algorithme :
-//
+CompteurAccesURLAbsolu::CompteurAccesURLAbsolu (const std::string & URL)
+    : url(URL), nbAcces(0)
 {
   #ifdef MAP
   cout << "Appel au constructeur de <CompteurAccesURL>" << endl;

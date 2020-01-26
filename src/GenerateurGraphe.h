@@ -19,6 +19,7 @@ e-mail               : charles.javerliat@insa-lyon.fr et fabien.narboux@insa-lyo
 //------------------------------------------------------------------------
 // Rôle de la classe <GenerateurGraphe>
 //
+// La classe GenerateurGraphe permet de générer un graphe (GraphViz) d'une structure URLsToCptAccesURLRelatif
 //
 //------------------------------------------------------------------------
 
@@ -31,6 +32,10 @@ public:
   //----------------------------------------------------- Méthodes publiques
 
   static void genererGraphe(const URLsToCptAccesURLRelatif & cpt, std::ostream & os = std::cout);
+  // Mode d'emploi : méthode statique, peut être appelée sans instanciation
+  //
+  // Contrat :
+  // - génère un graphe de cpt dans la sortie os
 
 };
 

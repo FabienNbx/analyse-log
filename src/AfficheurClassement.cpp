@@ -12,11 +12,8 @@ e-mail               : charles.javerliat@insa-lyon.fr et fabien.narboux@insa-lyo
 //---------------------------------------------------------------- INCLUDE
 
 //-------------------------------------------------------- Include système
-
-//------------------------------------------------------ Include personnel
-
-
 #include <algorithm>
+//------------------------------------------------------ Include personnel
 
 #include "AfficheurClassement.h"
 
@@ -37,4 +34,4 @@ void AfficheurClassement::afficherClassement(std::vector<CompteurAccesURLAbsolu*
     const CompteurAccesURLAbsolu* cpt = *it;
     os << (*cpt) << std::endl;
   }
-}
+} // -- FIn de afficherClassement

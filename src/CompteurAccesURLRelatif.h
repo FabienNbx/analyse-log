@@ -21,6 +21,7 @@ e-mail               : charles.javerliat@insa-lyon.fr et fabien.narboux@insa-lyo
 //------------------------------------------------------------------------
 // Rôle de la classe <CompteurAccesURLRelatif>
 //
+// La classe CompteurAccesURLRelatif regroupe une url, son origine et le nombre d'accès à cette url depuis cette origine
 //
 //------------------------------------------------------------------------
 
@@ -33,10 +34,8 @@ public:
   //----------------------------------------------------- Méthodes publiques
 
   void incrementer();
-  // Mode d'emploi :
-  //
   // Contrat :
-  //
+  // - Incrémente le nombre d'accès de la classe
 
   unsigned int getNbAcces() const;
 
@@ -45,17 +44,11 @@ public:
   const std::string & getCible() const;
 
   //-------------------------------------------- Constructeurs - destructeur
-  //CompteurAccesURLRelatif ( const CompteurAccesURLRelatif & unCompteurAccesURLRelatif );
-  // Mode d'emploi (constructeur de copie) :
-  //
-  // Contrat :
-  //
+
 
   CompteurAccesURLRelatif (const std::string & origine, const std::string & cible);
-  // Mode d'emploi :
-  //
   // Contrat :
-  //
+  // - Construit un CompteurAccesURLRelatif depuis une origine et une cible/url avec un nombre d'accès initial à 0
 
   //------------------------------------------------------------------ PRIVE
 
@@ -65,9 +58,7 @@ protected:
   //----------------------------------------------------- Attributs protégés
 
   std::string origine;
-
   std::string cible;
-
   unsigned int nbAcces;
 
 };

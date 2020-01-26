@@ -13,10 +13,11 @@ e-mail               : charles.javerliat@insa-lyon.fr et fabien.narboux@insa-lyo
 
 //-------------------------------------------------------- Include système
 
-//------------------------------------------------------ Include personnel
-
 #include <set>
 #include <sstream>
+
+
+//------------------------------------------------------ Include personnel
 
 #include "GenerateurGraphe.h"
 

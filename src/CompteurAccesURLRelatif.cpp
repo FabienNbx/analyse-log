@@ -30,23 +30,21 @@ void CompteurAccesURLRelatif::incrementer()
 unsigned int CompteurAccesURLRelatif::getNbAcces() const
 {
   return nbAcces;
-}
+} //----- Fin de getNbAcces
 
 const std::string & CompteurAccesURLRelatif::getOrigine() const
 {
   return origine;
-}
+} //----- Fin de getOrigine
 
 const std::string & CompteurAccesURLRelatif::getCible() const
 {
   return cible;
-}
+} //----- Fin de getCible
 
 //-------------------------------------------- Constructeurs - destructeur
 
 CompteurAccesURLRelatif::CompteurAccesURLRelatif (const std::string & forigine, const std::string & fcible) : origine(forigine), cible(fcible), nbAcces(0)
-// Algorithme :
-//
 {
   #ifdef MAP
   cout << "Appel au constructeur de <CompteurAccesURL>" << endl;
